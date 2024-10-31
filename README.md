@@ -7,9 +7,10 @@ https://realpython.com/python-typer-cli/
 1. add
 2. clear
 3. complete
-4. init
-5. list
-6. remove
+4. edit
+5. init
+6. list
+7. remove
 
 ## Usage
 Run
