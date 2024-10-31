@@ -4,7 +4,7 @@ from pathlib import Path
 from todo import DB_READ_ERROR, ID_ERROR
 
 from todo.database import DatabaseHandler
-from task import Task
+from todo.task import Task
 class CurrentTodo(NamedTuple):
     todo: Dict[str, Any]
     error: int

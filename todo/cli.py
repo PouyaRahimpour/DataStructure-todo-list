@@ -2,7 +2,7 @@
 from typing import Optional, List
 
 import typer
-from task import Task, Priority
+from todo.task import Task
 
 from todo import (
     __app_name__, __version__, ERRORS, config, database, todo
@@ -90,7 +90,7 @@ def add(
     todoer = get_todoer()
     task = Task(
         name,
-        priority=Priority(priority),
+        priority=priority,
         due_date=due_date,
         note=note,
         steps=steps,
@@ -106,7 +106,7 @@ def add(
     else:
         typer.secho(
             f"""task "{task.name}" was added """
-            f"""with priority: {task.priority.name}""",
+            f"""with priority: {task.priority}""",
             fg = typer.colors.GREEN,
         )
     
